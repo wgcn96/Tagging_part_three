@@ -9,6 +9,10 @@ __author__ = 'Wang Chen'
 __time__ = '2019/8/6'
 
 
+import sys
+sys.path.extend(['/data/wangchen/auto-tagging/Tagging_part_three/', '/data/wangchen/auto-tagging/Tagging_part_three/tagrank'])
+
+
 from tagrank.Mat import Mat
 from tagrank.static import *
 

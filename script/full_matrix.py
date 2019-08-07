@@ -10,6 +10,9 @@ __author__ = 'Wang Chen'
 __time__ = '2019/8/7'
 
 
+import sys
+sys.path.extend(['/data/wangchen/auto-tagging/Tagging_part_three/', '/data/wangchen/auto-tagging/Tagging_part_three/script'])
+
 from script.static import *
 
 
