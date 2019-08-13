@@ -28,8 +28,8 @@ class Mat:
     def __init__(self, array_path):
         self.ndarray = np.load(array_path)
         self.shape = self.ndarray.shape
-        self.tag_num = self.shape[0]
-        self.movie_num = self.shape[1]
+        self.movie_num = self.shape[0]
+        self.tag_num = self.shape[1]
         self.scale = np.sum(self.ndarray)
 
 

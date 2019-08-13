@@ -54,9 +54,9 @@ if __name__ == '__main__':
                 pos += 1
 
     refined_matrix = np.delete(matrix, redundancy_pos_list, 0)
-    refined_matrix = np.delete(refined_matrix, redundancy_pos_list, 1)
+    refined_matrix = np.delete(refined_matrix, redundancy_pos_list, 1).astype(np.float32)
     if if_disp: print("refined matrix shape: ", refined_matrix.shape)
 
-    save_path = os.path.join(workdir, 'matrix', 'refined_similarity_matrix.txt')
+    save_path = os.path.join(redundancy_dir, 'refined_similarity_matrix.txt')
     np.savetxt(save_path, refined_matrix)
 
